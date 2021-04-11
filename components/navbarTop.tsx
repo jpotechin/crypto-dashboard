@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/navbarTop.module.css';
+import styles from '../styles/navbarTop.module.scss';
 
 export default function NavBarTop(): JSX.Element {
 	const [showDropdown, setShowDropdown] = useState(false);
@@ -68,7 +68,9 @@ export default function NavBarTop(): JSX.Element {
 						<a className="block md:inline hover:underline m-2 md:m-0 md:ml-4 nav-link">Sign in</a>
 					</Link>
 					<Link href="/signup" passHref>
-						<button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white ml-3 py-2 px-4 border border-blue-500 hover:border-transparent rounded-xl">
+						<button
+							className={`bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white ml-3 py-2 px-4 border border-blue-500 hover:border-transparent rounded-xl ${styles.btn} ${styles.animate}`}
+						>
 							Get Started
 						</button>
 					</Link>
