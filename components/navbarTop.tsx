@@ -1,6 +1,6 @@
 import { useState } from 'react';
-
 import Link from 'next/link';
+import styles from '../styles/navbarTop.module.css';
 
 export default function NavBarTop(): JSX.Element {
 	const [showDropdown, setShowDropdown] = useState(false);
@@ -14,7 +14,9 @@ export default function NavBarTop(): JSX.Element {
 		logo left ---- links ---- Signin / Get Started button
 		*/
 
-		<header className="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative">
+		<header
+			className={`flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative ${styles.navContainer}`}
+		>
 			<a href="#" className="block">
 				<span className="cursor-default font-bold uppercase block mt-2 md:mt-0 md:inline text-blue-900 block">
 					Coin Incubator

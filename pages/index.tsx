@@ -1,15 +1,44 @@
 import Head from 'next/head';
 import Navbar from '../components/navbarTop';
+import styles from '../styles/Home.module.css';
 
 export default function Home(): JSX.Element {
 	return (
-		<div>
+		<div className={styles.homeContainer}>
 			<Head>
 				<title>Cryptocurrency Dashboard</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
-			<main></main>
+			<main className="container mx-auto flex justify-center">
+				<div className="lg:2/6 xl:w-2/4 mt-20 lg:mt-40 lg:ml-16 text-center">
+					<div className="text-6xl font-semibold text-gray-900 leading-none">
+						Grow your digital future
+					</div>
+					<div className="mt-6 text-3xl font-light text-true-gray-500 antialiased ">
+						The easist way to buy and sell cryptocurrency
+					</div>
+					<div className="mt-6 text-xl font-light text-true-gray-500 antialiased ">
+						Coin Incubator is the easiest place to buy and sell cryptocurrency. Buy and Sell Bitcoin
+						and 30+ Other Digital Currencies
+					</div>
+					<div className="mt-6 text-xl font-light text-true-gray-500 antialiased py-1 px-1 flex justify-center">
+						{/* <div className="flex justify-center "> */}
+						<input
+							type="search"
+							className="shadow rounded border-0 p-3 min-w-50"
+							placeholder="Enter your email address"
+						/>
+						<button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-xl">
+							Get Started
+						</button>
+						{/* </div> */}
+					</div>
+					<div className="mt-6 text-sm font-light text-true-gray-500 ">
+						No waitlist - available for download now.
+					</div>
+				</div>
+			</main>
 		</div>
 	);
 }
