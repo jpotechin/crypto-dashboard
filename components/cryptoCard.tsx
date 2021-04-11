@@ -1,15 +1,16 @@
-const CryptoCard = (): JSX.Element => {
-	const logo = 'Logo';
-	const fakeGraph = 'Fake Graph';
-	const marketCap = 'Market Cap';
-	const priceChange = 'Price Change';
+import { ICryptoCard } from '../interfaces/home.interface';
+
+const CryptoCard = (props: { cryptoData: ICryptoCard }): JSX.Element => {
+	const { logoUrl, fakeGraphUrl, marketCapUrl, priceChangeUrl } = props.cryptoData;
+
+	console.log('Data: ', props.cryptoData);
 
 	return (
 		<div className="flex flex-wrap overflow-hidden">
-			<div className="w-1/2 overflow-hidden">{logo}</div>
-			<div className="w-1/2 overflow-hidden">{fakeGraph}</div>
-			<div className="w-1/2 overflow-hidden">{marketCap}</div>
-			<div className="w-1/2 overflow-hidden">{priceChange}</div>
+			<div className="w-1/2 overflow-hidden">{logoUrl}</div>
+			<div className="w-1/2 overflow-hidden">{fakeGraphUrl}</div>
+			<div className="w-1/2 overflow-hidden">{marketCapUrl}</div>
+			<div className="w-1/2 overflow-hidden">{priceChangeUrl}</div>
 		</div>
 	);
 };
