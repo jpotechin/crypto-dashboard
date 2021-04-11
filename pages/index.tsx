@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Grid from '@material-ui/core/Grid';
-import styles from '../styles/Home.module.css';
+import Navbar from '../components/navbar-top';
 
 export default function Home(): JSX.Element {
 	return (
@@ -9,11 +8,8 @@ export default function Home(): JSX.Element {
 				<title>Cryptocurrency Dashboard</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={styles.container}>
-				<Grid container direction="row" justify="center" alignItems="center">
-					<h1>Welcome</h1>
-				</Grid>
-			</main>
+			<Navbar />
+			<main></main>
 		</div>
 	);
 }
