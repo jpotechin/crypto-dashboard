@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navbar from '../components/navbar-top';
+import Navbar from '../components/navbarTop';
 
 export default function Home(): JSX.Element {
 	return (
