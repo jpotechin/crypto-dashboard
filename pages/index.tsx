@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/navbarTop';
+import CryptoCard from '../components/cryptoCard';
 import styles from '../styles/Home.module.scss';
+import Button from '@material-ui/core/Button';
 
 export default function Home(): JSX.Element {
 	return (
@@ -29,13 +31,19 @@ export default function Home(): JSX.Element {
 							className="shadow rounded border-0 p-3 min-w-50"
 							placeholder="Enter your email address"
 						/>
-						<button className="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-xl">
+						{/* Hammer out if you like classic vs Material Design */}
+						{/* <button className="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-xl">
 							Get Started
-						</button>
-						{/* </div> */}
+						</button> */}
+						<Button variant="contained" color="primary">
+							Get Started
+						</Button>
 					</div>
 					<div className="mt-6 text-sm font-light text-true-gray-500 ">
 						No waitlist - available for download now.
+					</div>
+					<div className="mt-6">
+						<CryptoCard />
 					</div>
 				</div>
 			</main>
