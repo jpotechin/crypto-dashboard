@@ -8,22 +8,25 @@ import { ICryptoCard } from '../interfaces/home.interface';
 export default function Home(): JSX.Element {
 	const cryptoData: ICryptoCard[] = [
 		{
-			logoUrl: 'BTC',
-			fakeGraphUrl: 'Fake Graph',
-			marketCapUrl: 'Market Cap',
-			priceChangeUrl: 'Price Change',
+			logoUrl: '/crypto/btc.svg',
+			fakeGraphUrl: '/crypto/btc-graph.png',
+			marketCap: '$1,123,591,930,647',
+			priceChange: '2.90%',
+			priceChangePositive: true,
 		},
 		{
-			logoUrl: 'ETH',
-			fakeGraphUrl: 'Fake Graph',
-			marketCapUrl: 'Market Cap',
-			priceChangeUrl: 'Price Change',
+			logoUrl: '/crypto/eth.svg',
+			fakeGraphUrl: '/crypto/eth-graph.png',
+			marketCap: '$248,255,722,091',
+			priceChange: '-3.54%',
+			priceChangePositive: false,
 		},
 		{
-			logoUrl: 'Dogecoin',
-			fakeGraphUrl: 'Fake Graph',
-			marketCapUrl: 'Market Cap',
-			priceChangeUrl: 'Price Change',
+			logoUrl: '/crypto/doge.svg',
+			fakeGraphUrl: '/crypto/doge-graph.png',
+			marketCap: '$9,593,743,824',
+			priceChange: '30.22%',
+			priceChangePositive: true,
 		},
 	];
 

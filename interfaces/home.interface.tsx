@@ -1,6 +1,7 @@
 export interface ICryptoCard {
 	logoUrl: string;
 	fakeGraphUrl: string;
-	marketCapUrl: string;
-	priceChangeUrl: string;
+	marketCap: string;
+	priceChange: string;
+	priceChangePositive: boolean;
 }
