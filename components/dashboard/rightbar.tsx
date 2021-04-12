@@ -26,7 +26,7 @@ const RightBar = (): JSX.Element => {
 			<div className="flex flex-col items-center p-3">
 				<p className="text-gray-600 text-sm text-center">
 					{' '}
-					These are reards availbaleto be claimed right now.
+					These are rewards available to be claimed right now.
 				</p>
 			</div>
 		</div>
