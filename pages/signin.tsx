@@ -1,6 +1,6 @@
 import AccountContainer from '../components/account/AccountContainer';
 
-const signup = (): JSX.Element => {
+const signin = (): JSX.Element => {
 	return (
 		<div>
 			<AccountContainer />
@@ -8,4 +8,4 @@ const signup = (): JSX.Element => {
 	);
 };
 
-export default signup;
+export default signin;

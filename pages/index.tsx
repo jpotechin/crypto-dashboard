@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss';
 import Button from '@material-ui/core/Button';
 import { ICryptoCard } from '../interfaces/home.interface';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home(): JSX.Element {
 	const cryptoData: ICryptoCard[] = [
@@ -82,9 +83,11 @@ export default function Home(): JSX.Element {
 							{/* <button className="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-xl">
 							Get Started
 						</button> */}
-							<Button variant="contained" color="primary">
-								Get Started
-							</Button>
+							<Link href="/signup" passHref>
+								<Button variant="contained" color="primary">
+									Get Started
+								</Button>
+							</Link>
 						</div>
 						<div className="mt-6 text-sm font-light text-true-gray-500 ">
 							No waitlist - available for download now.
