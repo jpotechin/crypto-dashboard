@@ -19,7 +19,7 @@ export default function NavBarTop(): JSX.Element {
 			className={`flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative ${styles.navContainer}`}
 		>
 			<a href="#" className="block">
-				<span className="cursor-default font-bold uppercase block mt-2 md:mt-0 md:inline text-blue-900 block">
+				<span className="cursor-default font-bold uppercase mt-2 md:mt-0 md:inline text-blue-900 block">
 					Coin Incubator
 				</span>
 			</a>
@@ -40,25 +40,25 @@ export default function NavBarTop(): JSX.Element {
 				<ul className={`md:flex ${showDropdown ? 'block' : 'hidden'} `}>
 					<li className="block md:inline hover:underline m-2 md:m-0 md:ml-4">
 						<Link href="/">
-							<a className="nav-link">Home</a>
+							<a className="nav-link text-blue-700">Home</a>
 						</Link>
 					</li>
 					<li className="block md:inline hover:underline m-2 md:m-0 md:ml-4">
-						<Link href="/prices">
+						<Link href="#">
 							<a className="nav-link">Prices</a>
 						</Link>
 					</li>
 					<li className="block md:inline hover:underline m-2 md:m-0 md:ml-4">
-						<Link href="/learn">
+						<Link href="#">
 							<a className="nav-link">Learn</a>
 						</Link>
 					</li>
-					<li className="md:hidden block md:inline hover:underline m-2 md:m-0 md:ml-4">
+					<li className="md:hidden block hover:underline m-2 md:m-0 md:ml-4">
 						<Link href="/signin">
 							<a className="nav-link">Sign in</a>
 						</Link>
 					</li>
-					<li className="md:hidden block md:inline hover:underline m-2 md:m-0 md:ml-4">
+					<li className="md:hidden block hover:underline m-2 md:m-0 md:ml-4">
 						<Link href="/signup">
 							<a className="nav-link">Sign up</a>
 						</Link>

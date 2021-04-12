@@ -13,10 +13,8 @@ const CryptoCard = (props: { cryptoData: ICryptoCard }): JSX.Element => {
 		priceChangePositive,
 	} = props.cryptoData;
 
-	console.log('Data: ', props.cryptoData);
-
 	return (
-		<div className="flex flex-wrap overflow-hidden">
+		<div className="flex flex-wrap overflow-hidden bg-white my-5  rounded-xl">
 			<div className="w-1/2 overflow-hidden">
 				<div className="flex justify-center items-center w-full h-full pb-2">
 					<Image src={logoUrl} alt="me" width="64" height="64" />

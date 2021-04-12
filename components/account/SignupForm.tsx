@@ -13,9 +13,12 @@ const SignupForm = (): JSX.Element => {
 			<a href="#" className={`${styles.mutedLink} my-3`}>
 				Forgot your Password?
 			</a>
-			<button type="submit" className={`${styles.roundedButton} mb-3`}>
+			{/* <button type="submit" className={`${styles.roundedButton} mb-3`}>
 				Sign Up
-			</button>
+			</button> */}
+			<Link href="/dashboard" passHref>
+				<button className={`${styles.roundedButton} mb-3`}>Sign Up</button>
+			</Link>
 			<Link href="/signin">
 				<a className={`${styles.mutedLink} my-3`}>
 					Already have an account? <span className={`${styles.boldLink}`}>Sign In</span>
