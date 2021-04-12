@@ -1,4 +1,5 @@
 import Card from './card';
+import Middle from './middle';
 
 const Container = (): JSX.Element => {
 	return (
@@ -13,7 +14,9 @@ const Container = (): JSX.Element => {
 				<Card title="CLAIMABLE REWARD" balance={0.100079} icon={2} />
 				<Card title="DELEGATED" balance={0.339079} icon={3} />
 			</div>
-			<div className="flex  ml-3 mt-6 space-x-6  mr-4"></div>
+			<div className="flex  ml-3 mt-6 space-x-6  mr-4">
+				<Middle />
+			</div>
 		</div>
 	);
 };
