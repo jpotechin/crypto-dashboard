@@ -1,9 +1,15 @@
 import Sidebar from '../components/dashboard/sidebar';
+import Header from '../components/dashboard/header';
 
 const dashboard = (): JSX.Element => {
 	return (
 		<div>
-			<Sidebar />
+			<div className="flex">
+				<Sidebar />
+				<div>
+					<Header />
+				</div>
+			</div>
 		</div>
 	);
 };
