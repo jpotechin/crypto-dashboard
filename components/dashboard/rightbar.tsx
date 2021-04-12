@@ -5,7 +5,7 @@ const RightBar = (): JSX.Element => {
 				<p className="font-semibold  ">Delegation </p>
 			</div>
 			<div className="flex flex-col items-center p-3">
-				<p className="font-semibold text-lg text-gray-800"> 21 h 47 m 51s</p>
+				<p className="font-semibold text-lg text-gray-800"> 21 hours 47 minutes </p>
 				<p className="text-gray-600 text-sm">until next rewards batch is distributed</p>
 			</div>
 
