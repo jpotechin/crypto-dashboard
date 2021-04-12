@@ -5,7 +5,7 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 const Header = (): JSX.Element => {
 	return (
-		<div className="flex shadow-xl p-3">
+		<div className="flex shadow-xl bg-gray-50 p-3 h-screen justify-between">
 			<div className="flex space-x-3">
 				<p className="text-gray-400">Address</p>
 				<p className="text-gray-400">3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5</p>
@@ -18,9 +18,9 @@ const Header = (): JSX.Element => {
 			<div className="flex space-x-2">
 				<AppsIcon className="text-grey-300" />
 			</div>
-			<div className="flex space-x-2">
+			<div className="flex space-x-2 text-gray-300 mr-3">
 				<ExitToAppIcon className="text-grey-300" />
-				<p>Close</p>
+				<p className="text-gray-600">Close</p>
 			</div>
 		</div>
 	);

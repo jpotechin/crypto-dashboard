@@ -6,7 +6,7 @@ const dashboard = (): JSX.Element => {
 		<div>
 			<div className="flex">
 				<Sidebar />
-				<div>
+				<div className="w-screen">
 					<Header />
 				</div>
 			</div>
