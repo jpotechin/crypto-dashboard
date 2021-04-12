@@ -1,7 +1,9 @@
+import AccountContainer from '../components/AccountContainer';
+
 const signup = (): JSX.Element => {
 	return (
 		<div>
-			<h1>Sign Up</h1>
+			<AccountContainer />
 		</div>
 	);
 };
