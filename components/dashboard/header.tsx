@@ -2,6 +2,7 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
 import AppsIcon from '@material-ui/icons/Apps';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import Link from 'next/link';
 
 const Header = (): JSX.Element => {
 	return (
@@ -12,10 +13,12 @@ const Header = (): JSX.Element => {
 				<CropLandscapeIcon className="text-gray-300" />
 				<DashboardIcon className="text-gray-300" />
 			</div>
-			<div className="flex space-x-4 text-gray-400 mr-3">
+			<div className="flex space-x-4 text-gray-400 mr-3 justify-start">
 				<AppsIcon />
-				<ExitToAppIcon />
-				<p className="text-gray-600 font-semibold">Close</p>
+
+				<Link href="/">
+					<ExitToAppIcon />
+				</Link>
 			</div>
 		</div>
 	);
