@@ -4,6 +4,7 @@ import CryptoCard from '../components/cryptoCard';
 import styles from '../styles/Home.module.scss';
 import Button from '@material-ui/core/Button';
 import { ICryptoCard } from '../interfaces/home.interface';
+import Image from 'next/image';
 
 export default function Home(): JSX.Element {
 	const cryptoData: ICryptoCard[] = [
@@ -40,6 +41,14 @@ export default function Home(): JSX.Element {
 			priceChange: '30.22%',
 			priceChangePositive: true,
 		},
+	];
+
+	const companyLogos = [
+		'/logo/apple.svg',
+		'/logo/bitcoin.svg',
+		'/logo/coinbase.svg',
+		'/logo/instagram.svg',
+		'/logo/variety.svg',
 	];
 
 	return (
@@ -92,7 +101,11 @@ export default function Home(): JSX.Element {
 						<div className="mt-6 text-3xl font-semibold text-true-gray-500 antialiased ">
 							We are featured on
 						</div>
-						<div className="flex wrap justify-between item-center "></div>
+						<div className="flex wrap overflow-hidden justify-between item-center ">
+							{companyLogos.map((logoUrl, index) => (
+								<Image src={logoUrl} alt="me" width="128" height="128" key={index} />
+							))}
+						</div>
 						<div className="text-3xl font-semibold text-gray-900 leading-none">
 							Accessible to anyone
 						</div>
