@@ -31,8 +31,35 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 50%;
+	transform: rotate(60deg);
+	top: -290px;
+	left: -70px;
 	width: 160%;
 	height: 550px;
 	background: rgb(241, 196, 15);
 	background: linear-gradient(90deg, rgba(241, 196, 15, 1) 20%, rgba(243, 172, 18, 1) 100%);
+}
+
+.headerContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.headerText {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.24;
+	color: #fff;
+	z-index: 10;
+	margin: 0;
+}
+
+.smallText {
+	color: #fff;
+	font-weight: 500;
+	font-size: 11px;
+	z-index: 10;
+	margin: 0;
+	margin-top: 7px;
 }
