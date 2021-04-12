@@ -1,4 +1,5 @@
 import styles from '../../styles/account/AccountCommon.module.scss';
+import Link from 'next/link';
 
 const SigninForm = (): JSX.Element => {
 	return (
@@ -13,9 +14,14 @@ const SigninForm = (): JSX.Element => {
 			<button type="submit" className={`${styles.roundedButton} mb-3`}>
 				Sign In
 			</button>
-			<a href="#" className={`${styles.mutedLink} my-3`}>
-				Do not have an account? <span className={`${styles.boldLink}`}>Sign Up</span>
-			</a>
+			<Link href="/signup">
+				<a className={`${styles.mutedLink} my-3`}>
+					Do not have an account? <span className={`${styles.boldLink}`}>Sign Up</span>
+				</a>
+			</Link>
+			<Link href="/">
+				<a className={`${styles.mutedLink} my-3`}>Return Home</a>
+			</Link>
 		</div>
 	);
 };

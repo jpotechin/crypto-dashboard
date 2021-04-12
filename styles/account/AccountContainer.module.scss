@@ -40,6 +40,22 @@
 	background: linear-gradient(58deg, rgba(241, 196, 15, 1) 20%, rgba(243, 172, 18, 1) 100%);
 }
 
+.backdropVariant {
+	expanded: {
+		width: '233%';
+		height: '1050px';
+		border-radius: '20%';
+		transform: 'rotate(60deg)';
+	}
+
+	collapsed: {
+		width: '160%';
+		height: '550px';
+		border-radius: '50%';
+		transform: 'rotate(60deg)';
+	}
+}
+
 .headerContainer {
 	width: 100%;
 	display: flex;
