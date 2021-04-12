@@ -11,7 +11,7 @@ const Sidebar = (): JSX.Element => {
 	return (
 		<div className="md:w-3/12 w-6/12 h-screen shadow-2xl">
 			<div className="border-b py-3 mt-1 flex justify-around">
-				<p className="cursor-default font-bold uppercase block mt-2 md:mt-0 md:inline text-blue-900 block">
+				<p className="cursor-default font-bold uppercase mt-2 md:mt-0 md:inline text-blue-900 block">
 					Coin Incubator
 				</p>
 				<p> |</p>
