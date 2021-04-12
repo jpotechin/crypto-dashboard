@@ -19,7 +19,7 @@ const Sidebar = (): JSX.Element => {
 			</div>
 			<div className="p-4 space-y-4">
 				<div className="space-y-4">
-					<h1 className="text-gray-300">MENU</h1>
+					<h1 className="text-gray-500">MENU</h1>
 				</div>
 				<div>
 					<div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer ">
