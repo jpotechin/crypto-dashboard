@@ -4,18 +4,25 @@ import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import TrendingDownIcon from '@material-ui/icons/TrendingDown';
 
 const CryptoCard = (props: { cryptoData: ICryptoCard }): JSX.Element => {
-	const { logoUrl, fakeGraphUrl, marketCap, priceChange, priceChangePositive } = props.cryptoData;
+	const {
+		logoUrl,
+		logoDetail,
+		fakeGraphUrl,
+		marketCap,
+		priceChange,
+		priceChangePositive,
+	} = props.cryptoData;
 
 	console.log('Data: ', props.cryptoData);
 
 	return (
 		<div className="flex flex-wrap overflow-hidden">
 			<div className="w-1/2 overflow-hidden">
-				<div className="flex justify-center items-center w-full h-full">
+				<div className="flex justify-center items-center w-full h-full pb-2">
 					<Image src={logoUrl} alt="me" width="64" height="64" />
 					<div className="flex justify-center items-center wrap flex-col ml-6">
-						<div>BTC</div>
-						<div>BTC / BIDR</div>
+						<div>{logoDetail.coin}</div>
+						<div>{logoDetail.coinAlt}</div>
 					</div>
 				</div>
 			</div>
