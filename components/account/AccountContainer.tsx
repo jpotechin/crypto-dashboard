@@ -8,7 +8,6 @@ const AccountContainer = (): JSX.Element => {
 	const path = router.pathname;
 	const isSignup = path === '/signup' ? true : false;
 	const headerTag = isSignup ? 'Sign up' : 'Sign in';
-	console.log('Path ', router.pathname);
 
 	return (
 		<div className={`${styles.accountPage}`}>
