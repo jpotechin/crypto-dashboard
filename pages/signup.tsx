@@ -1,4 +1,4 @@
-import AccountContainer from '../components/AccountContainer';
+import AccountContainer from '../components/account/AccountContainer';
 
 const signup = (): JSX.Element => {
 	return (

@@ -1,4 +1,5 @@
-import styles from '../styles/AccountContainer.module.scss';
+import styles from '../../styles/account/AccountContainer.module.scss';
+import SigninForm from './SigninForm';
 
 const AccountContainer = (): JSX.Element => {
 	return (
@@ -11,6 +12,9 @@ const AccountContainer = (): JSX.Element => {
 						<h2 className={`${styles.headerText}`}>Back</h2>
 						<h5 className={`${styles.smallText}`}>Sign in to continue</h5>
 					</div>
+				</div>
+				<div className={`${styles.innerContainer}`}>
+					<SigninForm />
 				</div>
 			</div>
 		</div>
